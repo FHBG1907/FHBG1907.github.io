@@ -1,0 +1,378 @@
+:root{
+    --white-light:rgba(255,255,255, 0.5);
+    --alice-blue: #f8f9fa;
+    --gray: #ededed;
+}
+
+body
+{
+font-family: 'Barlow', sans-serif;    
+}
+
+.header
+{
+width: 1000px;
+height: 100px;
+background-color: #3D3838;
+box-sizing: border-box;
+display: block;
+}
+
+.availabilityMenuBox /*Adderad*/
+{
+position: absolute;
+padding: 0;
+margin-top: 10px; /*Gillades ej*/
+margin-left: 270px;
+box-sizing: border-box;
+}
+
+#availabilityMenuList /*Adderad*/
+{
+list-style-type: none;
+display: flex;
+padding: 0;
+}
+
+#availabilityMenuList a /*Adderad*/
+{
+margin-left: 3px;
+font-size: small;  
+color: #DECFAC;
+text-decoration: none;  
+}
+
+.header img
+{
+margin-top: 10px;
+margin-left: 10px;    
+}
+
+.loginBox
+{
+float: right;   
+margin-top: 20px;
+margin-right: 5px;
+}
+
+.loginBox button
+{
+border: none; 
+margin: 3px;  
+background-color: #7B7F80; 
+color: #C9AD7F;
+font-family: 'Barlow', sans-serif;
+font-weight: bold;
+}
+
+.loginBox button:hover
+{
+background-color: #98A0A2;
+color: white;  
+transition: 0.6s;
+}
+
+#logIn
+{
+width: 110px;
+text-align: center;  
+}
+
+#createAcc
+{
+width: 110px;  
+}
+
+.menuBar
+{
+width: 1000px;
+height: 50px;
+border-top: 5px solid black;
+background-color: #3D3838;
+
+display: block;
+}
+
+.menuBar a
+{
+color: #DECFAC;
+text-decoration: none;	
+font-weight: bold;
+}
+
+.menuBar a:hover
+{
+color: white;
+cursor: pointer;
+}
+
+#leftMenu a
+{
+text-align: center;
+margin: 0px 4px;
+}
+
+#leftMenu
+{
+list-style-type: none;
+float: left;
+padding: 0px;
+}
+	
+#rightMenu
+{
+list-style-type: none;
+float: right;	
+}
+	
+#leftMenu li
+{
+display: inline;
+}
+	
+#rightMenu li
+{
+display: inline-flex;	
+margin-left: 4px;
+margin-right: 8px;
+}
+
+.mainContent
+{
+ width: 1000px;   
+ height: 800px;
+ background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("TeeThrow.png");
+ background-position: center;
+ overflow: scroll;
+ z-index: -10;
+}
+
+.maincontent img{
+    width: 100%;
+    display:block;
+}
+
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.lg-title,
+.md-title,
+.sm-title{
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+    font-family: 'Barlow', sans-serif;
+}
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+    color: #C9AD7F;
+}
+
+.md-title{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sm-title{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.text-light{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 0.4rem 0;
+}
+
+.products{
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+}
+
+.products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+
+}
+
+.product{
+    margin:  2rem;
+    position: relative;
+
+}
+.product-content{
+    background: var(--gray);
+    opacity: 0.7;
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+
+.product-img{
+    background:var(--white-light);
+    box-shadow: 0 0 20px 10px var(--white-light);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.btn-bid-history, .btn-bid{
+background: transparent;
+border: 1px solid black;
+padding: 0.8rem 0;
+width: 125px;
+text-transform: uppercase;
+cursor: pointer;
+border: none;
+transition: all 0.6s ease;
+}
+
+.btn-bid{
+
+background:black;
+color:white;
+}
+.btn-bid:hover{
+background: tomato;
+
+}
+.btn-bid-history{
+background: white;
+}
+
+.btn-bid-history:hover{
+background: tomato;
+color: #fff;
+}
+
+.product-info{
+background: white;
+opacity: 0.7;
+padding: 2rem;
+margin: 5px;
+}
+
+.product-info-top{
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+.raritet-stjarna span{
+color: tomato;
+}
+.product-name{
+color:black;
+display:block;
+text-decoration: none;
+font-size: 1rem;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.product-img img{
+transition: transform 0.6s ease;
+}
+
+
+.product:hover .product-img img{
+transform: scale(1.1);
+}
+
+
+.product:hover .product-img{
+background: tomato;
+}
+
+.product:hover .product-btns{
+opacity: 1;
+}
+
+@media screen and (min-width: 992px){
+.product-items{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+@media screen and (min-width: 1336px){
+.product-items{
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+
+.footerBar
+{
+display: relative;
+width: 1000px;
+height: 160px;
+border-top: 5px solid black;
+background-color: #3D3838; 
+color: #C9AD7F; 
+}
+
+.footerBar .footerContentContainer
+{
+float: left;
+margin-left: 60px;
+margin-right: 60px;
+}
+
+.fa 
+{
+padding: 10px;
+font-size: 30px;
+width: 25px; 
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+margin: 20px;
+box-shadow: 2px 3px 2px rgb(163, 161, 161);
+}
+  
+.fa:hover 
+{
+opacity: 0.7;
+transform: rotateX(360deg);
+transition: 2s;
+}
+  
+.fa-facebook 
+{
+background: #3B5998;
+color: white;
+border: 3px solid white;
+}
+
+.fa-instagram
+{
+background: #bc2a8d;
+color: black;
+border: 3px solid #fbad50;
+}
+
+.fa-twitter 
+{
+background: #55ACEE;
+color: #3B5998;
+border: 3px solid #3B5998;
+}
